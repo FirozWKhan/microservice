@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.frk.model;
 
 public class Customer {
 	public Customer(int id, String fname, String lname) {

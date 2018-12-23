@@ -1,16 +1,24 @@
-package com.example.demo;
+package com.frk.controller;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.frk.dao.CustomerDaoImpl;
+import com.frk.model.Customer;
 
 @RestController
 @RequestMapping("/cust")
 public class CustomerController {
+	@Autowired
+	CustomerDaoImpl cd ;
 	public static List<Customer> list = new ArrayList<Customer>();
 	static {
 		list.add(new Customer(1, "Firoz", "Khan"));
@@ -28,6 +36,11 @@ public class CustomerController {
 	public Optional<Customer> getCustomerInfo(@PathVariable("id") int id) {
 		Optional<Customer> customer = list.stream().filter(s -> s.getId() == id).findAny();
 		return customer;
+	}
+	@RequestMapping(value="/save",method=RequestMethod.POST)
+	public String saveCustomerInfo(@RequestBody Customer cr) {
+		cd.saveCustomer(cr);
+		return "saved";
 	}
 
 }
