@@ -46,9 +46,6 @@ public class CustomerController {
 		return "saved";
 	}
 	
-	
-	
-	
 	@RequestMapping(value="/update",method=RequestMethod.PUT)
 	public String updateCustomerInfo(@RequestBody Customer cr) {
 		cd.saveCustomer(cr);
