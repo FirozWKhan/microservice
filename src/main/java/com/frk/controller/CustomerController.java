@@ -13,12 +13,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.frk.dao.CustomerDaoImpl;
 import com.frk.model.Customer;
+import com.frk.service.CustomerService;
 
 @RestController
 @RequestMapping("/cust")
 public class CustomerController {
 	@Autowired
 	CustomerDaoImpl cd ;
+	@Autowired
+	CustomerService cr;
 	public static List<Customer> list = new ArrayList<Customer>();
 	static {
 		list.add(new Customer(1, "Firoz", "Khan"));
@@ -29,7 +32,7 @@ public class CustomerController {
 
 	@RequestMapping("/all")
 	public List<Customer> getAllCustomerData() {
-		return list;
+		return cr.getAllCustomer();
 	}
 
 	@RequestMapping("/{id}/info")
