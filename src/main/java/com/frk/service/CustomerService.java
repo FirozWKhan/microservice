@@ -17,17 +17,17 @@ public class CustomerService {
 	CustomerDaoImpl cr;
 	
 	public List<Customer> getAllCustomer(){
-		List<CustomerEntity> customerAll = cr.getCustomerAll();
-		List<Customer> cm = new  ArrayList<Customer>();
+		List<CustomerEntity> customerEntityList = cr.getCustomerAll();
+		List<Customer> customerList = new  ArrayList<Customer>();
 				
-		for (CustomerEntity ce : customerAll) {
+		for (CustomerEntity ce : customerEntityList) {
 			Customer m = new Customer();
 			m.setFname(ce.getFname());
 			m.setLname(ce.getLname());
-			cm.add(m);
+			customerList.add(m);
 		}
 		
-		return cm;
+		return customerList;
 	}
 	
 	
