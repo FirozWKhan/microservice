@@ -36,5 +36,9 @@ public class Customer {
 	public void setLname(String lname) {
 		this.lname = lname;
 	}
+	public void updateCustomer(Customer cr) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

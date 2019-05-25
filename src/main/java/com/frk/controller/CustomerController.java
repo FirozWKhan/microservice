@@ -32,6 +32,7 @@ public class CustomerController {
 
 	@RequestMapping("/all")
 	public List<Customer> getAllCustomerData() {
+		System.out.println("afiya chnges");
 		return cr.getAllCustomer();
 	}
 
@@ -43,7 +44,30 @@ public class CustomerController {
 	@RequestMapping(value="/save",method=RequestMethod.POST)
 	public String saveCustomerInfo(@RequestBody Customer cr) {
 		cd.saveCustomer(cr);
+
+		
+		System.out.println("hlw");
+		
+
+		System.out.println("KK");
+
 		return "saved";
 	}
+	
+	@RequestMapping(value="/update",method=RequestMethod.PUT)
+	public String updateCustomerInfo(@RequestBody Customer cr) {
+		cd.saveCustomer(cr);
+		return "saved";
+	}
+	public void test(){
+		System.out.println("hellooo");
+
+		System.out.println("hellooo");
+		System.out.println("hellooo");
+		
+		
+		
+	}
+	
 
 }
