@@ -32,10 +32,11 @@ public class CustomerController {
 		list.add(new Customer(4, "Merry", "Chrisssssssssss"));
 
 		list.add(new Customer(4, "Merry", "Chrissssss"));
+		list.add(new Customer(4, "Merry", "Chrissssss11111"));
 		list.add(new Customer(4, "Merry", "Chrissssss"));
 		list.add(new Customer(4, "Merry", "Chrissssss"));
 		list.add(new Customer(4, "Merry", "Chrissssss"));
-		list.add(new Customer(4, "Merry", "Chrissssss"));
+		list.add(new Customer(4, "Merry", "Chrissssss111"));
 
 	}
 
