@@ -26,7 +26,7 @@ public class CustomerController {
 	static {
 		list.add(new Customer(1, "Firoz", "Khan"));
 		list.add(new Customer(2, "Michal", "Jhon1111"));
-		list.add(new Customer(3, "Dan", "Franksssss"));
+		list.add(new Customer(3, "Dan", "Franooooooooksssss"));
 		list.add(new Customer(4, "Merry", "Chrissssss"));
 	}
 
