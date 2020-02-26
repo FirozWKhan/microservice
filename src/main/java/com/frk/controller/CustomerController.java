@@ -25,7 +25,7 @@ public class CustomerController {
 	public static List<Customer> list = new ArrayList<Customer>();
 	static {
 		list.add(new Customer(1, "Firoz", "Khan11111"));
-		list.add(new Customer(2, "Michal", "Jhon1111"));
+		list.add(new Customer(2, "Michal", "Jhon222221111"));
 		list.add(new Customer(3, "Dan", "Franooooooooksssss"));
 		list.add(new Customer(4, "Merry", "Chrissssss"));
 
