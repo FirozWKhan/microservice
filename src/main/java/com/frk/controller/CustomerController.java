@@ -36,7 +36,14 @@ public class CustomerController {
 		list.add(new Customer(4, "Merry", "Chrissssss"));
 		list.add(new Customer(4, "Merry", "Chrissssss"));
 		list.add(new Customer(4, "Merry", "Chrissssss"));
+
 		list.add(new Customer(4, "Merry", "Chrissssss111"));
+
+		list.add(new Customer(4, "Merry", "Chrissssss"));
+		list.add(new Customer(4, "Merry", "Chrissssss"));
+		list.add(new Customer(4, "Merry", "Chrissssss"));
+		list.add(new Customer(4, "Merry", "Chrissssss"));
+
 
 	}
 
