@@ -28,7 +28,15 @@ public class CustomerController {
 		list.add(new Customer(2, "Michal", "Jhon1111"));
 		list.add(new Customer(3, "Dan", "Franooooooooksssss"));
 		list.add(new Customer(4, "Merry", "Chrissssss"));
+
 		list.add(new Customer(4, "Merry", "Chrisssssssssss"));
+
+		list.add(new Customer(4, "Merry", "Chrissssss"));
+		list.add(new Customer(4, "Merry", "Chrissssss"));
+		list.add(new Customer(4, "Merry", "Chrissssss"));
+		list.add(new Customer(4, "Merry", "Chrissssss"));
+		list.add(new Customer(4, "Merry", "Chrissssss"));
+
 	}
 
 	@RequestMapping("/all")
