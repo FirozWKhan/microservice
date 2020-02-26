@@ -6,7 +6,7 @@ public class StudentController {
 		System.out.println("hlw firoz khan");
 		System.out.println("hlw afiya");
 		System.out.println("hlw aliya");
-		System.out.println("hlw aliyaaaaa");
+		System.out.println("hlw aliyaaaaakhan");
 
 	}
 
