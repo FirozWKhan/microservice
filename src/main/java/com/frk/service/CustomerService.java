@@ -25,6 +25,7 @@ public class CustomerService {
 			m.setFname(ce.getFname());
 			m.setLname(ce.getLname());
 			customerList.add(m);
+			
 		}
 		
 		return customerList;
