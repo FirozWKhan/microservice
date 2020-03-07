@@ -34,7 +34,7 @@ public class CustomerController {
 
 		list.add(new Customer(6,"af","aa"));
 
-		
+		System.out.println("hlw");
 		
 		
 		
