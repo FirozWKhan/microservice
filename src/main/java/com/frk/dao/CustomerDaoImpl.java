@@ -31,7 +31,9 @@ public class CustomerDaoImpl {
 		ce.setId(UUID.randomUUID().toString().replace("-",""));
 		ce.setFname(cr.getFname());
 		ce.setLname(cr.getLname());
+		
 		em.persist(ce);
+		
 		return "done";
 		
 	}

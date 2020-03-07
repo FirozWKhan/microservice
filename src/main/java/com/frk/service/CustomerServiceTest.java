@@ -20,6 +20,8 @@ import com.frk.model.Customer;
 @RunWith(MockitoJUnitRunner.class)
 public class CustomerServiceTest {
 	
+	
+	
 		@Mock
 	    private CustomerDaoImpl daoMock;
 		
@@ -31,6 +33,7 @@ public class CustomerServiceTest {
 	         MockitoAnnotations.initMocks(this);
 	    }
 	    
+	    
 	    @Test
 	    public void getAllCustomerTest() {
 	    
@@ -40,11 +43,13 @@ public class CustomerServiceTest {
 	     	
 	     	CustomerEntity entity = new CustomerEntity();
 	     	entity.setFname("abc");
+	     	entity.setEmail("afiya@");
 	     	customerList.add(entity);
 			Mockito.when(daoMock.getCustomerAll()).thenReturn(customerList);
 			
 			List<Customer> allCustomer = service.getAllCustomer();
 			Customer customer = allCustomer.get(0);
-			Assert.assertEquals(null,customer.getLname() );
+			
+			Assert.assertEquals("abc",customer.getFname() );
 	    }
 }

@@ -57,6 +57,7 @@ public class CustomerControllerTest {
 		customer.setId(1);
 		customer.setFname("fgdg");
 		customer.setLname("dfg");
+		
 		customerController.saveCustomerInfo(customer);
 	}
 

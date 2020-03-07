@@ -26,6 +26,9 @@ public class CustomerService {
 			m.setLname(ce.getLname());
 			customerList.add(m);
 			
+			
+			
+			
 		}
 		
 		return customerList;

@@ -6,8 +6,11 @@ public class Customer {
 		this.id = id;
 		this.fname = fname;
 		this.lname = lname;
+
 	}
-	public Customer(){}
+
+	public Customer() {
+	}
 
 	private int id;
 	private String fname;

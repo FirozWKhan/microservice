@@ -28,12 +28,18 @@ public class CustomerController {
 		list.add(new Customer(2, "Michal", "Jhon"));
 		list.add(new Customer(3, "Dan", "Frank"));
 		list.add(new Customer(4, "Merry", "Chris"));
+		
+		
+		
+		
+		
 	}
 
 	@RequestMapping("/all")
 	public List<Customer> getAllCustomerData() {
 		return cr.getAllCustomer();
 	}
+	
 
 	@RequestMapping("/{id}/info")
 	public Optional<Customer> getCustomerInfo(@PathVariable("id") int id) {
@@ -45,5 +51,6 @@ public class CustomerController {
 		cd.saveCustomer(cr);
 		return "saved";
 	}
+	
 
 }
