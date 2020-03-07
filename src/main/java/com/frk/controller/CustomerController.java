@@ -28,8 +28,12 @@ public class CustomerController {
 		list.add(new Customer(2, "Michal", "Jhon"));
 		list.add(new Customer(3, "Dan", "Frank"));
 		list.add(new Customer(4, "Merry", "Chris"));
+
 		list.add(new Customer(5,"hh","kkk"));
 		
+
+		list.add(new Customer(6,"af","aa"));
+
 		
 		
 		
